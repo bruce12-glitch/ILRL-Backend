@@ -45,6 +45,8 @@ export interface Person {
   github?: string;
   scholar?: string;
   linkedin?: string;
+  /** relative path under the frontend public/ dir, e.g. "people/inba.jpg" */
+  photo?: string;
   tint: "navy" | "gold" | "cream";
   now?: string;
   years?: string;
