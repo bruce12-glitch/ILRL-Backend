@@ -9,7 +9,6 @@ export const PEOPLE: PeopleGroup = {
       name: "Vinoth Nandakumar",
       role: "Research Mentor",
       focus: "PhD in Mathematics, MIT",
-      github: "https://github.com/bruce12-glitch",
       scholar: "https://scholar.google.com/citations?user=SKq_-mgAAAAJ&hl=en",
       linkedin: "https://www.linkedin.com/in/vinoth-nandakumar-07456b149/",
       tint: "gold",
