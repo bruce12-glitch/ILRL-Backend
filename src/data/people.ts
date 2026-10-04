@@ -12,6 +12,7 @@ export const PEOPLE: PeopleGroup = {
       focus: "LLM Inference and ML systems",
       github: "https://github.com/bruce12-glitch",
       scholar: scholarSearch("Inbasekaran S"),
+      linkedin: "https://www.linkedin.com/in/inbasekaran-s-106a90383",
       tint: "navy",
     },
   ],

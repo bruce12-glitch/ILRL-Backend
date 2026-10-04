@@ -44,6 +44,7 @@ export interface Person {
   focus: string;
   github: string;
   scholar: string;
+  linkedin?: string;
   tint: "navy" | "gold" | "cream";
   now?: string;
   years?: string;
