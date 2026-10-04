@@ -15,6 +15,14 @@ export const PEOPLE: PeopleGroup = {
       linkedin: "https://www.linkedin.com/in/inbasekaran-s-106a90383",
       tint: "navy",
     },
+    {
+      name: "Vinoth Nandakumar",
+      role: "Researcher",
+      focus: "PhD in Mathematics, MIT",
+      github: "https://github.com/bruce12-glitch",
+      scholar: scholarSearch("Vinoth Nandakumar"),
+      tint: "gold",
+    },
   ],
   alumni: [],
 };
