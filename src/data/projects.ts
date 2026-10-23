@@ -26,7 +26,6 @@ export const PROJECTS: Project[] = [
     arxiv: "https://arxiv.org/abs/2512.03310",
     arxivLabel: "arXiv:2512.03310",
     code: "https://github.com/bruce12-glitch/Entro-Prefill",
-    diagram: "prefill",
     paperId: "entroprefill-paper",
   },
   {
@@ -54,7 +53,6 @@ export const PROJECTS: Project[] = [
     arxiv: "https://arxiv.org/abs/2603.01421",
     arxivLabel: "arXiv:2603.01421",
     code: "https://github.com/bruce12-glitch/PageEntro-KV",
-    diagram: "kv",
     paperId: "page-entrokv-paper",
   },
 ];
