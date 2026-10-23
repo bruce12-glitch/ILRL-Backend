@@ -61,7 +61,7 @@ All responses are JSON shaped `{ status, data }` (lists add `meta.count`).
 |--------|------|-------------|
 | GET | `/api/health` | Liveness (`{ ok, uptime }`) |
 | GET | `/api/projects` | All research projects |
-| GET | `/api/projects/:id` | One project (`entroprefill`, `page-entrokv`, `recloop`) |
+| GET | `/api/projects/:id` | One project (`entroprefill`, `page-entrokv`) |
 | GET | `/api/publications` | All papers (empty until real ones land) |
 | GET | `/api/publications/:id` | One paper |
 | GET | `/api/people` | `{ faculty, team, alumni }` |
@@ -90,7 +90,7 @@ GET /api/projects/entroprefill
     ],
     "arxiv": "https://arxiv.org/abs/2512.03310",
     "arxivLabel": "arXiv:2512.03310",
-    "code": "https://github.com/bruce12-glitch/ILRL",
+    "code": "https://github.com/bruce12-glitch/Entro-Prefill",
     "diagram": "prefill",
     "paperId": "entroprefill-paper"
   }
