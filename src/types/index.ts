@@ -19,7 +19,7 @@ export interface Project {
   arxiv: string;
   arxivLabel: string;
   code: string;
-  diagram: "prefill" | "kv" | "loop";
+  diagram: "prefill" | "kv";
   paperId: string;
 }
 

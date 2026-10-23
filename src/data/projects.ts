@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
     ],
     arxiv: "https://arxiv.org/abs/2512.03310",
     arxivLabel: "arXiv:2512.03310",
-    code: "https://github.com/bruce12-glitch/ILRL",
+    code: "https://github.com/bruce12-glitch/Entro-Prefill",
     diagram: "prefill",
     paperId: "entroprefill-paper",
   },
@@ -53,36 +53,8 @@ export const PROJECTS: Project[] = [
     ],
     arxiv: "https://arxiv.org/abs/2603.01421",
     arxivLabel: "arXiv:2603.01421",
-    code: "https://github.com/bruce12-glitch/ILRL",
+    code: "https://github.com/bruce12-glitch/PageEntro-KV",
     diagram: "kv",
     paperId: "page-entrokv-paper",
-  },
-  {
-    id: "recloop",
-    tag: "SYS–03",
-    name: "RecLoop",
-    area: "Serving · Scheduling",
-    headline:
-      "Inference-in-loop scheduling: recurrence-aware continuous batching for low-latency LLM serving",
-    status: "Active",
-    blurb:
-      "Serving is a loop: requests arrive, batch, decode a step, and re-enter the scheduler — thousands of times per second. RecLoop treats that recurrence as the object to optimize.",
-    detail:
-      "A recurrence-cost model predicts how long each sequence will keep looping, letting the scheduler pack continuous batches by future cost rather than current length. Paired with EntroPrefill and Page-EntroKV.",
-    contributions: [
-      "Recurrence-aware admission control and preemption driven by predicted future decode cost.",
-      "Speculative draft–verify loops as first-class, scheduler-visible batch members.",
-      "Open-loop benchmarks and traces released alongside the runtime for reproducibility.",
-    ],
-    metrics: [
-      { value: "−41%", label: "P99 decode latency" },
-      { value: "1.9×", label: "SLO-attaining goodput" },
-      { value: "8", label: "GPU configs, SLOs held" },
-    ],
-    arxiv: "https://arxiv.org/abs/2601.00887",
-    arxivLabel: "arXiv:2601.00887",
-    code: "https://github.com/bruce12-glitch/ILRL",
-    diagram: "loop",
-    paperId: "recloop-paper",
   },
 ];
