@@ -1,26 +1,22 @@
-/* ── Shared types used across routes and data ────────────────────────── */
-
 export interface Metric {
-  value: string;
   label: string;
+  value: string;
+  detail: string;
 }
 
 export interface Project {
   id: string;
-  tag: string;
-  name: string;
-  area: string;
-  headline: string;
-  status: "Active" | "Completed" | "Archived";
-  blurb: string;
-  detail: string;
+  index: string;
+  title: string;
+  subtitle: string;
+  status: string;
+  arxivId: string;
+  arxivUrl: string;
+  code: string;
+  summary: string;
+  problemStatement: string;
   contributions: string[];
   metrics: Metric[];
-  arxiv: string;
-  arxivLabel: string;
-  code: string;
-  diagram: "prefill" | "kv" | "loop";
-  paperId: string;
 }
 
 export interface Paper {
@@ -28,54 +24,27 @@ export interface Paper {
   title: string;
   authors: string[];
   venue: string;
-  area: "Prefill" | "KV-Cache" | "Serving" | "Systems" | "Survey";
   date: string;
-  year: number;
-  arxiv: string;
-  arxivLabel: string;
-  code?: string;
+  arxivId: string;
+  pdfUrl: string;
+  codeUrl: string;
   abstract: string;
-  selected?: boolean;
+  bibtex: string;
 }
 
 export interface Person {
+  id: string;
   name: string;
   role: string;
+  affiliation: string;
   focus: string;
+  email?: string;
   github?: string;
-  scholar?: string;
-  linkedin?: string;
-  /** relative path under the frontend public/ dir, e.g. "people/inba.jpg" */
-  photo?: string;
-  tint: "navy" | "gold" | "cream";
-  now?: string;
-  years?: string;
-}
-
-export interface PeopleGroup {
-  faculty: Person[];
-  team: Person[];
-  alumni: Person[];
 }
 
 export interface NewsItem {
-  id: string;
   date: string;
-  title: string;
-  detail?: string;
+  tag: string;
+  text: string;
   link?: string;
-  linkLabel?: string;
-}
-
-export interface ContactPayload {
-  name: string;
-  email: string;
-  type: "join" | "collab" | "general";
-  message: string;
-}
-
-export interface ApiResponse<T> {
-  status: number;
-  data: T;
-  meta?: Record<string, unknown>;
 }
